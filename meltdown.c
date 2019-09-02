@@ -118,7 +118,7 @@ int main(int argc, char *argv[])
         int max_idx = 0;
         for (int i = 0; i < 256; i++)
             if (score[max_idx] < score[i]) max_idx = i;
-        printf("Guessed : %c (Score : %d / 1000)\n", (char)max_idx, score[max_idx]);
+        printf("[%3d] Guessed : %c (Score : %d / 1000)\n", c + 1, (char)max_idx, score[max_idx]);
     }
     return 0;
 }
